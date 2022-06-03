@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Country card component with snapshot testing It should match the snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="country-cars"
+  >
+    <div>
+      Country name: Sweden
+    </div>
+    <div>
+      Country capital: Stockholm
+    </div>
+    <div>
+      Country population: 10 million
+    </div>
+    <div>
+      Country currency: SEK
+    </div>
+  </div>
+</DocumentFragment>
+`;

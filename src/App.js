@@ -1,21 +1,21 @@
-import logo from './logo.svg'
-import './App.css'
+import MultiSelectCheckbox from './components/MultiSelectCheckbox'
+import CountryCard from './components/CountryCard'
 
 function App() {
+  const options = [{ label: 'checkbox 1' }, { label: 'checkbox 2' }]
+  const countries = {
+    name: 'Sweden',
+    capital: 'Stockholm',
+    population: '10 million',
+    currency: 'SEK',
+  }
+  const handleOnChange = (item) => {
+    console.log(item)
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Edit</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <MultiSelectCheckbox options={options} onChange={handleOnChange} />
+      <CountryCard country={countries}></CountryCard>
     </div>
   )
 }

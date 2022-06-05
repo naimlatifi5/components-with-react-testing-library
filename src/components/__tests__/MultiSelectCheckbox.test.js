@@ -21,7 +21,6 @@ describe('Checkboxes testing', () => {
 
     const checkBoxes = screen.getAllByTestId('checkbox').map((item) => {
       // on initial load expect checkbox to be false
-
       expect(item.checked).toEqual(false)
       fireEvent.change(item)
     })

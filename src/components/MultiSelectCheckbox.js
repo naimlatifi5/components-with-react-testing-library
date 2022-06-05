@@ -24,6 +24,7 @@ const MultiSelectCheckbox = ({ options, onChange }) => {
             <input
               id="checkbox"
               type="checkbox"
+              data-testid="checkbox"
               readOnly
               checked={item.checked || false}
               onChange={() => handleToggle(index)}

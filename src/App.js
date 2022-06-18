@@ -2,7 +2,7 @@ import MultiSelectCheckbox from './components/MultiSelectCheckbox'
 import CountryCard from './components/CountryCard'
 import SearchInput from './components/SearchInput'
 import ButtonStyle from './components/ButtonStyle'
-import Users from './components/TODOS'
+import FetchPosts from './components/FetchPosts'
 
 function App() {
   const options = [{ label: 'checkbox 1' }, { label: 'checkbox 2' }]
@@ -27,7 +27,7 @@ function App() {
       <CountryCard country={countries} />
       <SearchInput value="hej" handleChangeValue={handleChange} />
       <ButtonStyle handleClick={onHandleClick} />
-      <Users />
+      <FetchPosts />
     </div>
   )
 }

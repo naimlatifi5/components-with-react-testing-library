@@ -9,9 +9,7 @@ describe('Country card component with snapshot testing', () => {
       population: '10 million',
       currency: 'SEK',
     }
-    const { asFragment } = render(
-      <CountryCard country={countries}></CountryCard>,
-    )
+    const { asFragment } = render(<CountryCard country={countries} />)
     expect(asFragment()).toMatchSnapshot()
   })
 })

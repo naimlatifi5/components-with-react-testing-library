@@ -5,6 +5,8 @@ import ButtonStyle from './components/ButtonStyle'
 import FetchPosts from './components/FetchPosts'
 import Input from './components/Input'
 
+import Checkbox from './components/Checkbox'
+
 function App() {
   const options = [{ label: 'checkbox 1' }, { label: 'checkbox 2' }]
   const countries = {
@@ -29,6 +31,7 @@ function App() {
       <CountryCard country={countries} />
       <SearchInput value="hej" handleChangeValue={handleChange} />
       <ButtonStyle handleClick={onHandleClick} />
+      <Checkbox />
       <FetchPosts />
     </div>
   )

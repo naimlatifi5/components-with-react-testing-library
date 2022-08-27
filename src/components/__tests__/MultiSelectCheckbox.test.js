@@ -15,14 +15,4 @@ describe('Checkboxes testing', () => {
     expect(checkBoxes).toEqual(fakeCheckboxes)
     expect(checkBoxes).toHaveLength(2)
   })
-
-  test('Check if checkbox is checked or not checked', async () => {
-    render(<MultiSelectCheckBox options={mockedCheckboxes} />)
-
-    const checkBoxes = screen.getAllByTestId('checkbox').map((item) => {
-      // on initial load expect checkbox to be false
-      expect(item.checked).toEqual(false)
-      fireEvent.change(item)
-    })
-  })
 })

@@ -31,7 +31,7 @@ describe('Test suit for button component', () => {
     // on button click
     fireEvent.click(btn)
     expect(btn).toHaveStyle({ backgroundColor: 'green' })
-    expect(btn.textContent).toEqual('Change button to red')
+    expect(btn.textContent).toEqual('Change button to red11')
     expect(handleClick).toBeCalledTimes(1)
   })
 })

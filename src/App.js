@@ -1,6 +1,5 @@
 import MultiSelectCheckbox from './components/MultiSelectCheckbox'
 import CountryCard from './components/CountryCard'
-import SearchInput from './components/SearchInput'
 import ButtonStyle from './components/ButtonStyle'
 import FetchPosts from './components/FetchPosts'
 import Input from './components/Input'
@@ -29,7 +28,6 @@ function App() {
       <Input />
       <MultiSelectCheckbox options={options} onChange={handleOnChange} />
       <CountryCard country={countries} />
-      <SearchInput value="hej" handleChangeValue={handleChange} />
       <ButtonStyle handleClick={onHandleClick} />
       <Checkbox />
       <FetchPosts />

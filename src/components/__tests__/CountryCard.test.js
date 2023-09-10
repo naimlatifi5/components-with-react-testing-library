@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react'
+import { render } from '@testing-library/react'
 import CountryCard from '../CountryCard'
 
 describe('Country card component with snapshot testing', () => {

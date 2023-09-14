@@ -17,9 +17,7 @@ function App() {
   const handleOnChange = (item) => {
     console.log(item)
   }
-  const handleChange = (e) => {
-    console.log('event ', e.target.value)
-  }
+
   const onHandleClick = () => {
     console.log('Button clicked message from parent')
   }

@@ -2,7 +2,7 @@ import { render } from '@testing-library/react'
 import CountryCard from '../CountryCard'
 
 describe('Country card component with snapshot testing', () => {
-  test('It should match the snapshot', () => {
+      test('It should match the snapshot', () => {
     const countries = {
       name: 'Sweden',
       capital: 'Stockholm',

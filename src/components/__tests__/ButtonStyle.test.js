@@ -1,4 +1,4 @@
-import { render, screen, cleanup, fireEvent, act } from '@testing-library/react'
+import { render, screen, fireEvent } from '@testing-library/react'
 import ButtonStyle from '../ButtonStyle.js'
 
 describe('Test suit for button component', () => {
@@ -6,7 +6,7 @@ describe('Test suit for button component', () => {
 
   test('It should check button enabled on initial render', () => {
     render(<ButtonStyle />)
-    const btn = screen.getByRole('button')
+    const btn = screen.queryByTestId('button')
     // check if button is enabled
     expect(btn).toBeEnabled()
   })

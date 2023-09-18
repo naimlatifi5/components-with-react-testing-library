@@ -29,7 +29,7 @@ const FetchPosts = () => {
     return <div>Loading...</div>
   }
   return (
-    <ul data-testid="list">
+    <ul data-test-id="list">
       {posts.map((post) => (
         <li key={post.id}>{post.title}</li>
       ))}

@@ -18,7 +18,7 @@ const MultiSelectCheckbox = ({ options, onChange }) => {
         data.map((item, index) => (
           <label
             htmlFor="checkbox"
-            data-testid="checkbox-labels"
+            data-test-id="checkbox-labels"
             key={item.label}
           >
             <input

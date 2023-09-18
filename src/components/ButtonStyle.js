@@ -6,6 +6,7 @@ const ButtonStyle = ({ handleClick }) => {
 
   return (
     <button
+      data-test-id='button'
       style={{ backgroundColor: buttonColor }}
       type="button"
       onClick={() => handleClick(setButtonColor(newButtonColor))}

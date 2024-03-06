@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Country card component with snapshot testing It should match the snapshot 1`] = `
+exports[`Country card component with snapshot testing match the snapshot 1`] = `
 <DocumentFragment>
   <div
     class="country-cars"

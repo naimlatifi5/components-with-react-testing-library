@@ -7,7 +7,7 @@ const MagicButton = ({ handleOnClickProp }) => {
   const handleOnClickLocal = () => {
     setButtonColor('green');
     setText('Welcome to the app!');
-    handleOnClickProp();
+    handleOnClickProp?.();
   };
   return (
     <>

@@ -16,6 +16,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --watchAll=false",
+    "test:watch:button": "npm run test -- --watch MagicButton.test.js",
     "eject": "react-scripts eject",
     "prepare": "husky install"
   },

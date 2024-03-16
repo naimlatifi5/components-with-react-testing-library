@@ -10,16 +10,14 @@ const MagicButton = ({ handleOnClickProp }) => {
     handleOnClickProp?.();
   };
   return (
-    <>
-      <button
-        data-test-id="magic-button"
-        style={{ backgroundColor: buttonColor }}
-        type="button"
-        onClick={handleOnClickLocal}
-      >
-        {text}
-      </button>
-    </>
+    <button
+      data-test-id="magic-button"
+      style={{ backgroundColor: buttonColor }}
+      type="button"
+      onClick={handleOnClickLocal}
+    >
+      {text}
+    </button>
   );
 };
 

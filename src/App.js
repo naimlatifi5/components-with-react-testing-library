@@ -5,6 +5,7 @@ import FetchPosts from './components/FetchPosts';
 import Input from './components/Input';
 
 import Checkbox from './components/Checkbox';
+import MagicButton1 from './components/MagicButton1';
 
 function App() {
   const options = [{ label: 'checkbox 1' }, { label: 'checkbox 2' }];
@@ -22,6 +23,10 @@ function App() {
     console.log('This is important -> Button clicked on parent component');
   };
 
+  const handleCallFromParen = () => {
+    console.log('This is important -> Call from parent');
+  };
+
   return (
     <div className="App">
       <Input />
@@ -30,6 +35,7 @@ function App() {
       <MagicButton handleClickAsProp={handleClickOnParent} />
       <Checkbox />
       <FetchPosts />
+      <MagicButton1 callFromParent={handleCallFromParen} />
     </div>
   );
 }

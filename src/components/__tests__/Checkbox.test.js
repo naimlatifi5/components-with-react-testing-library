@@ -1,8 +1,8 @@
 import { render, screen, fireEvent } from '@testing-library/react';
 import Checkbox from '../Checkbox';
 
-describe('Test suit for Checkbox', () => {
-  it(`render the Checkbox as unchecked with false value as default`, () => {
+describe('Test suite for Checkbox', () => {
+  it(`should render the Checkbox as unchecked with false value as default`, () => {
     // find multiple checkboxes by names
     render(<Checkbox />);
     let checkbox = screen.getByRole('checkbox', { name: 'Another checkbox' });

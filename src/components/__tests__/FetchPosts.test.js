@@ -36,9 +36,7 @@ describe('When fetch operation is done with axios', () => {
     render(<FetchPosts />);
     const listNode = await screen.findByTestId('list');
 
-    await waitFor(() => {
-      expect(listNode).toBeInTheDocument();
-    });
+    expect(listNode).toBeInTheDocument();
     expect(axiosMock.get).toHaveBeenCalledWith(
       'https://jsonplaceholder.typicode.com/posts',
     );

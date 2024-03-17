@@ -1,8 +1,8 @@
 import { render, screen, cleanup } from '@testing-library/react';
 import FetchPosts from '../FetchPosts';
-import axiosMock from 'axios';
-
-afterEach(cleanup);
+import axios from 'axios';
+// mocking axios
+jest.mock('axios');
 
 describe('Testing async methods on fetching posts', () => {
   it('show a loading span if no posts exist', async () => {
@@ -15,7 +15,7 @@ describe('Testing async methods on fetching posts', () => {
 
 describe('When fetch operation is done with axios', () => {
   test('It should show a list of posts', async () => {
-    axiosMock.get.mockResolvedValue({
+    axios.get.mockResolvedValue({
       data: [
         {
           userId: 1,
@@ -37,7 +37,7 @@ describe('When fetch operation is done with axios', () => {
     const listNode = await screen.findByTestId('list');
 
     expect(listNode).toBeInTheDocument();
-    expect(axiosMock.get).toHaveBeenCalledWith(
+    expect(axios.get).toHaveBeenCalledWith(
       'https://jsonplaceholder.typicode.com/posts',
     );
   });
